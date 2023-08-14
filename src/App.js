@@ -22,7 +22,7 @@ function App() {
       </Helmet>
       {/* <ContactForm /> */}
       {/* <Footer /> */}
-      {Strona w budowie.}
+      {Strona w budowie!}
       <ToastContainer
         position="top-right"
         autoClose={5000}
