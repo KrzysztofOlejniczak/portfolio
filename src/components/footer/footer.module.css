@@ -1,0 +1,39 @@
+@import url("../../utils/styles/colors.css");
+
+.container {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 15px;
+  /* max-width: 1360px; */
+  padding: 16px 80px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.text {
+  color: var(--text);
+  font-weight: 700;
+  cursor: pointer;
+  text-align: center;
+}
+
+.socials {
+  display: flex;
+  flex-direction: row;
+  padding-left: 25px;
+  gap: 25px;
+}
+
+.socialIcon {
+  height: 40.45px;
+  width: auto;
+}
+
+@media screen and (min-width: 501px) {
+  .container {
+    flex-direction: row;
+    gap: 0;
+    max-width: 1360px;
+  }
+}

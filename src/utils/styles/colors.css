@@ -1,0 +1,7 @@
+:root {
+  --primary: rgb(255, 100, 100);
+  --opacity: rgba(255, 100, 100, 0.4);
+  --text: rgb(0, 0, 0);
+  --light: rgb(255, 255, 255);
+  --statusError: rgb(218, 20, 20);
+}
