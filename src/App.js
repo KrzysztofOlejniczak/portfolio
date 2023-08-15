@@ -20,9 +20,9 @@ function App() {
           rel="stylesheet"
         />
       </Helmet>
-      {/* <ContactForm /> */}
-      {/* <Footer /> */}
-      <p>Strona w budowie.</p>
+      <ContactForm />
+      <Footer />
+      {/* <p>Strona w budowie.</p> */}
       <ToastContainer
         position="top-right"
         autoClose={5000}
