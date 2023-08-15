@@ -26,11 +26,21 @@ const formatsLogger = app.get("env") === "development" ? "dev" : "short";
 
 app.use(logger(formatsLogger));
 
-app.use(cors());
+const corsOptions = {
+  origin: [
+    "https://olejniczak.dev",
+    "http://olejniczak.dev",
+    "https://www.olejniczak.dev",
+    "http://www.olejniczak.dev",
+    "http://localhost:3000",
+  ],
+  optionsSuccessStatus: 200,
+};
+app.use(cors(corsOptions));
 
 app.use(express.json());
 
-app.post("/sendMail", async (req, res) => {
+app.post("/mail", async (req, res) => {
   const RECAPTCHA_SECRET = process.env.RECAPTCHA_SECRET_KEY;
   const { name, email, message, captchaToken } = req.body;
 

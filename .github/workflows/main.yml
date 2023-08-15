@@ -37,3 +37,4 @@ jobs:
             cd ~/apps/portfolio
             npm install
             npm run build
+            pm2 reload server

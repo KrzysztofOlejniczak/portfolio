@@ -28,7 +28,7 @@ const ContactForm = () => {
   };
 
   const onFormSubmit = async (values, { resetForm }) => {
-    const url = "http://localhost:5000/sendMail"; // Podstaw właściwy adres URL API
+    const url = "https://api.olejniczak.dev/mail"; // Podstaw właściwy adres URL API
     const dataToSend = { ...values, captchaToken };
 
     const requestOptions = {
