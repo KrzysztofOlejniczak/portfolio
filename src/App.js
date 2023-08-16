@@ -1,9 +1,10 @@
 import { Helmet } from "react-helmet-async";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-// import Contact from "./components/contact/contact";
-// import ContactForm from "./components/contactForm/contactForm";
-// import Footer from "./components/footer/footer";
+import Projects from "./components/projects/projects";
+import Contact from "./components/contact/contact";
+import ContactForm from "./components/contactForm/contactForm";
+import Footer from "./components/footer/footer";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           rel="stylesheet"
         />
       </Helmet>
+      {/* <Projects /> */}
       {/* <Contact /> */}
       {/* <ContactForm /> */}
       {/* <Footer /> */}
