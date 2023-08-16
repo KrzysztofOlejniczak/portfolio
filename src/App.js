@@ -1,8 +1,9 @@
-import Footer from "./components/footer/footer";
-import ContactForm from "./components/contactForm/contactForm";
 import { Helmet } from "react-helmet-async";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+// import Contact from "./components/contact/contact";
+// import ContactForm from "./components/contactForm/contactForm";
+// import Footer from "./components/footer/footer";
 
 function App() {
   return (
@@ -16,13 +17,14 @@ function App() {
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
-          href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Playball&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Oxygen:wght@700&family=Playball&display=swap"
           rel="stylesheet"
         />
       </Helmet>
-      <ContactForm />
-      <Footer />
-      {/* <p>Strona w budowie.</p> */}
+      {/* <Contact /> */}
+      {/* <ContactForm /> */}
+      {/* <Footer /> */}
+      <p>Strona w budowie.</p>
       <ToastContainer
         position="top-right"
         autoClose={5000}

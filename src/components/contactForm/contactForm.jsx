@@ -28,7 +28,7 @@ const ContactForm = () => {
   };
 
   const onFormSubmit = async (values, { resetForm }) => {
-    const url = "https://api.olejniczak.dev/mail"; // Podstaw właściwy adres URL API
+    const url = "https://api.olejniczak.dev/mail";
     const dataToSend = { ...values, captchaToken };
 
     const requestOptions = {
@@ -39,7 +39,7 @@ const ContactForm = () => {
       body: JSON.stringify(dataToSend),
     };
     fetch(url, requestOptions)
-      .then((response) => response.json()) // Odpowiedź również jest parsowana do JSON
+      .then((response) => response.json())
       .then((data) => {
         toast.success(data.message);
       })
