@@ -1,0 +1,52 @@
+.header {
+  width: 100%;
+  height: 706px;
+  background-image: url("./background.svg");
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: top right;
+}
+
+/* prettier-ignore */
+.container {
+  margin: 0 auto;
+  max-width: 1360px;
+  height: 100%;
+  background-image: 
+    url("./html.svg"), 
+    url("./figma.svg"), 
+    url("./css.svg"), 
+    url("./nodejs.svg"), 
+    url("./photo.png"),
+    url("./js.svg"), 
+    url("./github.svg"), 
+    url("./mongo.svg"),
+    url("./mui.svg"), 
+    url("./react.svg"), 
+    url("./sass.svg");
+  background-repeat: no-repeat;
+  background-size: 
+    45px, 
+    45px, 
+    45px, 
+    45px, 
+    auto, 
+    45px, 
+    45px, 
+    45px, 
+    45px, 
+    45px,
+    45px;
+  background-position: 
+    top 520px right 420px, 
+    top 600px right 150px,
+    top 400px right 380px, 
+    top 415px right 140px, 
+    bottom 10px right 80px, 
+    top 350px right 500px,
+    top 340px right 90px, 
+    top 300px right 440px, 
+    top 150px right 180px,
+    top 180px right 550px, 
+    top 110px right 420px;
+}

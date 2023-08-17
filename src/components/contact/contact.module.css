@@ -1,0 +1,36 @@
+@import url("../../utils/styles/colors.css");
+
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+  max-width: 608px;
+  padding: 32px 10px 0;
+}
+
+.heading {
+  display: block;
+  width: 100%;
+  color: var(--light);
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Oxygen";
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 55.012px;
+  background-color: var(--text);
+  box-shadow: -4px 4px 0px 0px var(--primary);
+  max-width: 588px;
+  height: auto;
+  margin: 0 auto;
+}
+
+.text {
+  padding: 16px 0;
+  text-align: center;
+  font-family: Nunito;
+  font-size: 16px;
+  line-height: normal;
+}

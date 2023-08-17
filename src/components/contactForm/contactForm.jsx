@@ -63,84 +63,82 @@ const ContactForm = () => {
   return (
     <>
       {isSending && <Loader />}
-      <div className={styles.container}>
-        <Formik
-          initialValues={initialValues}
-          onSubmit={onFormSubmit}
-          validationSchema={validationSchema}
-          validateOnChange={false}
-          validateOnBlur={false}
-        >
-          <Form className={styles.form}>
-            <div className={styles.element}>
-              <label htmlFor="name" className={styles.label}>
-                Name
-              </label>
-              <Field
-                className={styles.input}
-                type="text"
-                id="name"
-                name="name"
-                placeholder="Your name"
-              />
-              <ErrorMessage
-                className={styles.errorMessage}
-                name="name"
-                component="div"
-              />
-            </div>
-            <div className={styles.element}>
-              <label htmlFor="email" className={styles.label}>
-                E-mail
-              </label>
-              <Field
-                className={styles.input}
-                type="email"
-                id="email"
-                name="email"
-                placeholder="you@email.com"
-              />
-              <ErrorMessage
-                className={styles.errorMessage}
-                name="email"
-                component="div"
-              />
-            </div>
-            <div className={styles.element}>
-              <label htmlFor="message" className={styles.label}>
-                Your message
-              </label>
-              <Field
-                className={styles.textArea}
-                as="textarea"
-                id="message"
-                name="message"
-              />
-              <ErrorMessage
-                className={styles.errorMessage}
-                name="message"
-                component="div"
-              />
-            </div>
-            <div className={styles.captcha}>
-              <ReCAPTCHA
-                ref={recaptchaRef}
-                sitekey={process.env.REACT_APP_RECAPTCHA_SITE_KEY}
-                onChange={onCaptchaChange}
-                onExpired={onCaptchaExpired}
-                hl="en"
-              />
-            </div>
-            <button
-              className={styles.button}
-              type="submit"
-              disabled={!captchaIsChecked}
-            >
-              Send message
-            </button>
-          </Form>
-        </Formik>
-      </div>
+      <Formik
+        initialValues={initialValues}
+        onSubmit={onFormSubmit}
+        validationSchema={validationSchema}
+        validateOnChange={false}
+        validateOnBlur={false}
+      >
+        <Form className={styles.form}>
+          <div className={styles.element}>
+            <label htmlFor="name" className={styles.label}>
+              Name
+            </label>
+            <Field
+              className={styles.input}
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Your name"
+            />
+            <ErrorMessage
+              className={styles.errorMessage}
+              name="name"
+              component="div"
+            />
+          </div>
+          <div className={styles.element}>
+            <label htmlFor="email" className={styles.label}>
+              E-mail
+            </label>
+            <Field
+              className={styles.input}
+              type="email"
+              id="email"
+              name="email"
+              placeholder="you@email.com"
+            />
+            <ErrorMessage
+              className={styles.errorMessage}
+              name="email"
+              component="div"
+            />
+          </div>
+          <div className={styles.element}>
+            <label htmlFor="message" className={styles.label}>
+              Your message
+            </label>
+            <Field
+              className={styles.textArea}
+              as="textarea"
+              id="message"
+              name="message"
+            />
+            <ErrorMessage
+              className={styles.errorMessage}
+              name="message"
+              component="div"
+            />
+          </div>
+          <div className={styles.captcha}>
+            <ReCAPTCHA
+              ref={recaptchaRef}
+              sitekey={process.env.REACT_APP_RECAPTCHA_SITE_KEY}
+              onChange={onCaptchaChange}
+              onExpired={onCaptchaExpired}
+              hl="en"
+            />
+          </div>
+          <button
+            className={styles.button}
+            type="submit"
+            disabled={!captchaIsChecked}
+          >
+            Send message
+          </button>
+        </Form>
+      </Formik>
     </>
   );
 };

@@ -5,11 +5,11 @@ import { nanoid } from "nanoid";
 
 const Projects = () => {
   return (
-    <div className={styles.container}>
+    <section className={styles.container}>
       {data.map((e) => {
         return <ProjectCard key={nanoid(4)} project={e} />;
       })}
-    </div>
+    </section>
   );
 };
 

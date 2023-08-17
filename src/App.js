@@ -1,9 +1,9 @@
 import { Helmet } from "react-helmet-async";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+// import Header from "./components/header/header";
 // import Projects from "./components/projects/projects";
 // import Contact from "./components/contact/contact";
-// import ContactForm from "./components/contactForm/contactForm";
 // import Footer from "./components/footer/footer";
 
 function App() {
@@ -22,9 +22,9 @@ function App() {
           rel="stylesheet"
         />
       </Helmet>
+      {/* <Header /> */}
       {/* <Projects /> */}
       {/* <Contact /> */}
-      {/* <ContactForm /> */}
       {/* <Footer /> */}
       <p>Strona w budowie.</p>
       <ToastContainer
