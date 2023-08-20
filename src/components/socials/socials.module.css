@@ -1,0 +1,11 @@
+.socials {
+  display: flex;
+  flex-direction: row;
+  padding-left: 25px;
+  gap: 25px;
+}
+
+.socialIcon {
+  height: 40.45px;
+  width: auto;
+}

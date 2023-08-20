@@ -5,7 +5,7 @@ import { nanoid } from "nanoid";
 
 const Projects = () => {
   return (
-    <section className={styles.container}>
+    <section id="projects" className={styles.container}>
       {data.map((e) => {
         return <ProjectCard key={nanoid(4)} project={e} />;
       })}

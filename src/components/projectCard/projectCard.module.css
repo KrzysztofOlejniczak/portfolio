@@ -9,12 +9,9 @@
   justify-content: flex-start;
   align-items: center;
   gap: 16px;
+  background-color: #fff;
   box-shadow: 0.8875598311424255px 0.8875598311424255px 3.550239324569702px 0px
     #000;
-  transition: transform 0.2s cubic-bezier(0.57, 0.31, 0.49, 0.98);
-  &:hover {
-    transform: scale(1.05);
-  }
 }
 
 .tagList {
@@ -49,4 +46,12 @@
   line-height: normal;
   color: var(--text);
   text-align: justify;
+}
+@media screen and (min-width: 851px) {
+  .container {
+    transition: transform 0.2s cubic-bezier(0.57, 0.31, 0.49, 0.98);
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
 }
