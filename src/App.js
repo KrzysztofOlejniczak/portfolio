@@ -1,10 +1,10 @@
 import { Helmet } from "react-helmet-async";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-// import Header from "./components/header/header";
-// import Projects from "./components/projects/projects";
-// import Contact from "./components/contact/contact";
-// import Footer from "./components/footer/footer";
+import Header from "./components/header/header";
+import Projects from "./components/projects/projects";
+import Contact from "./components/contact/contact";
+import Footer from "./components/footer/footer";
 
 function App() {
   return (
@@ -21,12 +21,17 @@ function App() {
           href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Oxygen:wght@700&family=Playball&display=swap"
           rel="stylesheet"
         />
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2369816781516572"
+          crossorigin="anonymous"
+        ></script>
       </Helmet>
-      {/* <Header /> */}
-      {/* <Projects /> */}
-      {/* <Contact /> */}
-      {/* <Footer /> */}
-      <p>Strona w budowie.</p>
+      <Header />
+      <Projects />
+      <Contact />
+      <Footer />
+      {/* <p>Strona w budowie.</p> */}
       <ToastContainer
         position="top-right"
         autoClose={5000}

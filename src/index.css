@@ -36,7 +36,7 @@ code {
     monospace;
 }
 
-/* ===== Scrollbar CSS ===== */
+/* ===== Scrollbar CSS =====
 /* Firefox */
 textarea {
   scrollbar-width: auto;
